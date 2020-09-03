@@ -21,7 +21,29 @@ For example, Array or Class are such type.
 But if you know precisely, should also about Heap and Stack
 
 Local variables are stored in Stack with their data
+And each data related each local variables are different each other as I said above
+It's important that the Stack store data types with fixed size like int, char, float etc...
+Those types have fixed size in complie time
 
+In contrast, the Heap store data types with non-fixed size like class etc
+And their size are set in run time.
+So for using these types, we need pointing variable like in C.
+these variable has the addresses for those data types.
+
+Now let's think about difference between C++(C),Java and Python,Javascript
+
+In Javascript or Python, we use variable with no datatype.
+That means every variables are determined their data size in run time.(I think)
+But the data themselves like integer(number) might be in the Stack because they have fixed size when they are called unlike their variables.
+In Javascript, so, the Object type is mutable. we can edit their properties. It's the same situation about class in Python(or C++ or Java)
+
+the String type is different on language about how to treat.
+In Javascript, the String is immutable type. The data appear in the Stack space whenever they are called.
+But in other language (maybe Python? I don't remember in other language srr) the String is mutable type.
+You can check whether they are immutable or not by changing one letter from the String data like doing str[0]='a'
+
+If knowing more precisely I'm gonna edit this.
+hope this might help.
 
 /*
 스택에 데이터랑 같이 들어가는데 이때 데이터는 서로 다른 것들이지 예를들어서
